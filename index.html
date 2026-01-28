@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Foodie Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* Navbar */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:#ff4d4d;
+    color:white;
+}
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-size:18px;
+}
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Hero */
+.hero{
+    height:90vh;
+    background:url("https://source.unsplash.com/1600x900/?food") no-repeat center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+.hero h1{
+    font-size:48px;
+}
+.hero p{
+    font-size:20px;
+    margin:15px 0;
+}
+.hero button{
+    padding:12px 25px;
+    border:none;
+    background:#ff4d4d;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.hero button:hover{
+    background:#e63939;
+}
+
+/* Menu */
+.menu{
+    padding:50px;
+    text-align:center;
+}
+.menu h2{
+    font-size:36px;
+    margin-bottom:30px;
+}
+.menu-items{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.card h3{
+    margin:15px 0 5px;
+}
+.card p{
+    color:gray;
+}
+.card span{
+    display:block;
+    margin:10px 0 20px;
+    font-weight:bold;
+    color:#ff4d4d;
+}
+
+/* About */
+.about{
+    padding:50px;
+    background:#f9f9f9;
+    text-align:center;
+}
+.about h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+/* Contact */
+.contact{
+    padding:40px;
+    text-align:center;
+}
+
+/* Footer */
+footer{
+    background:#ff4d4d;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+    .hero h1{
+        font-size:32px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">🍴 Foodie Hub</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h1>Delicious Food, Delivered Fresh</h1>
+    <p>Your favorite meals at your doorstep</p>
+    <button>Order Now</button>
+</section>
+
+<section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?pizza">
+            <h3>Pizza</h3>
+            <p>Cheesy & delicious</p>
+            <span>₹299</span>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?burger">
+            <h3>Burger</h3>
+            <p>Juicy & tasty</p>
+            <span>₹199</span>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?pasta">
+            <h3>Pasta</h3>
+            <p>Italian special</p>
+            <span>₹249</span>
+        </div>
+
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+        Foodie Hub brings you fresh, hygienic, and delicious food prepared
+        by expert chefs and delivered fast to your home.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: foodiehub@gmail.com</p>
+    <p>Phone: +91 98765 43210</p>
+</section>
+
+<footer>
+    <p>© 2026 Foodie Hub | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
